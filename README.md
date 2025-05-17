@@ -63,6 +63,3 @@ Proyek ini merupakan implementasi model deep learning untuk mendeteksi ekspresi 
 - Dataset gambar tidak disediakan dalam repositori ini. Pastikan Anda menyiapkan dataset dengan struktur direktori yang sesuai.
 - Model dapat dikustomisasi untuk menyesuaikan jumlah kelas emosi atau arsitektur CNN yang lebih kompleks.
 
-## 📌 Lisensi
-
-Proyek ini dilisensikan di bawah lisensi MIT.
