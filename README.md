@@ -1,68 +1,62 @@
+# 🧠 Emotion Detection 
+This project is an implementation of deep learning models to detect human expressions or emotions from facial images using Convolutional Neural Networks (CNN) with TensorFlow and Keras.
 
-# 🧠 Deteksi Emosi dari Gambar
+## 📁 Project Structure
 
-Proyek ini merupakan implementasi model deep learning untuk mendeteksi ekspresi atau emosi manusia dari gambar wajah menggunakan Convolutional Neural Networks (CNN) dengan TensorFlow dan Keras.
+- `detect.ipynb` - The main notebook that contains the entire emotion detection pipeline.
+- The dataset consists of facial images categorized by emotion labels.
 
-## 📁 Struktur Proyek
-
-- `deteksi.ipynb` — Notebook utama yang berisi keseluruhan pipeline deteksi emosi.
-- Dataset terdiri dari gambar wajah yang dikategorikan berdasarkan label emosi.
-
-## 🔧 Teknologi yang Digunakan
+## 🔧 Technologies Used
 
 - Python 3.x
 - TensorFlow & Keras
 - OpenCV
 - Scikit-learn
-- Matplotlib & Seaborn (visualisasi)
+- Matplotlib & Seaborn (visualization)
 - tqdm (progress bar)
 
-## ⚙️ Alur Pemrosesan
+## ⚙️ Processing Flow
 
-1. **Import Library**  
-   Mengimpor semua pustaka yang diperlukan untuk pemrosesan gambar, pemodelan, dan evaluasi.
+1. **Import Library** 
+ Import all libraries required for image processing, modeling, and evaluation.
 
 2. **Preprocessing Data**  
-   - Membaca dataset gambar
-   - Resize dan normalisasi gambar
-   - Split data menjadi training dan validation set
+   - Read the image dataset
+   - Resize and normalize the image
+   - Split data into training and validation sets
 
-3. **Augmentasi Gambar**  
-   Menggunakan `ImageDataGenerator` untuk meningkatkan performa model melalui augmentasi data.
+3. **Image Augmentation** 
+ Using `ImageDataGenerator` to improve model performance through data augmentation.
 
-4. **Arsitektur Model CNN**  
-   Menggunakan beberapa lapisan `Conv2D`, `MaxPooling2D`, `Flatten`, dan `Dense` untuk klasifikasi gambar.
+4. **CNN Model Architecture** 
+ Using multiple layers of `Conv2D`, `MaxPooling2D`, `Flatten`, and `Dense` for image classification.
 
-5. **Pelatihan Model**  
-   Model dilatih menggunakan `fit()` dan disimpan ke file jika diperlukan.
+5. **Model Training** 
+ The model is trained using `fit()` and saved to file if required.
 
-6. **Evaluasi Model**  
-   - Menampilkan grafik akurasi dan loss
-   - Menampilkan confusion matrix dan classification report
+6. **Model Evaluation**  
+   - Display accuracy and loss graphs
+   - Display confusion matrix and classification report
 
-## 🚀 Cara Menjalankan
+## 🚀 How to Run
 
-1. Clone repositori ini (jika ada):
+1. Clone this repository (if it exists):
    ```bash
-   git clone https://github.com/username/deteksi-emosi.git
-   cd deteksi-emosi
-   ```
+ git clone https://github.com/username/deteksi-emosi.git
+ cd emotion-detection
+ ```
 
-2. Instal dependensi:
+2. Install the dependencies:
    ```bash
-   pip install -r requirements.txt
-   ```
+ pip install -r requirements.txt
+ ```
 
-3. Jalankan notebook:
+3. Run the notebook:
    ```bash
-   jupyter notebook deteksi.ipynb
-   ```
+ jupyter notebook detection.ipynb
+ ```
 
-## 📝 Catatan
+## 📝 Note
 
-- Dataset gambar tidak disediakan dalam repositori ini. Pastikan Anda menyiapkan dataset dengan struktur direktori yang sesuai.
-- Model dapat dikustomisasi untuk menyesuaikan jumlah kelas emosi atau arsitektur CNN yang lebih kompleks.
-
-## 📌 Lisensi
-
-Proyek ini dilisensikan di bawah lisensi MIT.
+- Image datasets are not provided in this repository. Make sure you prepare the dataset with the appropriate directory structure.
+- The model can be customized to match the number of emotion classes or a more complex CNN architecture.
