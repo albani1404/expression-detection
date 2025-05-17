@@ -42,7 +42,7 @@ This project is an implementation of deep learning models to detect human expres
 
 1. Clone this repository (if it exists):
    ```bash
- git clone https://github.com/username/deteksi-emosi.git
+   git clone https://github.com/username/deteksi-emosi.git
  cd emotion-detection
  ```
 
